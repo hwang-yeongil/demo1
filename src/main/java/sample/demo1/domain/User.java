@@ -40,4 +40,5 @@ public class User {
 		this.providerId = providerId;
 		this.createData = createData;
 	}
+
 }
