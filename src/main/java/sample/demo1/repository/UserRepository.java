@@ -2,8 +2,8 @@ package sample.demo1.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import sample.demo1.domain.User;
+import sample.demo1.domain.DUser;
 
-public interface UserRepository extends JpaRepository<User, Integer>{
-	public User findByUsername(String username);
+public interface UserRepository extends JpaRepository<DUser, Integer>{
+	public DUser findByUsername(String username);
 }

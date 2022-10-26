@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import lombok.RequiredArgsConstructor;
 import sample.demo1.config.auth.PrincipalDetails;
-import sample.demo1.domain.User;
+import sample.demo1.domain.DUser;
 import sample.demo1.repository.UserRepository;
 
 @Controller
@@ -45,7 +45,7 @@ public class IndexController{
     }
 
     @PostMapping("/join")
-    public String join(User user) {
+    public String join(DUser user) {
         System.out.println(user);
         user.setRole("ROLE_USER");
         String rawPassword = user.getPassword();
