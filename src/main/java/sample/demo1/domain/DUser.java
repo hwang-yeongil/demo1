@@ -1,5 +1,6 @@
 package sample.demo1.domain;
 
+import java.sql.Date;
 import java.sql.Timestamp;
 
 import javax.persistence.Entity;
@@ -28,17 +29,17 @@ public class DUser {
 	private String provider;
 	private String providerId;
 	@CreationTimestamp // insert 쿼리 시 현시간으로 생성
-	private Timestamp createData;
+	private Timestamp  createDate;
 	
 	@Builder
-	public DUser(String username,String password,String email,String role,String provider,String providerId,Timestamp createData) {
+	public DUser(String username,String password,String email,String role,String provider,String providerId,Timestamp  createDate) {
 		this.username = username;
 		this.password = password;
 		this.email = email;
 		this.role = role;
 		this.provider = provider;
 		this.providerId = providerId;
-		this.createData = createData;
+		this.createDate = createDate;
 	}
 
 }
